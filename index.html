@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eventos</title>
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-  
-  </body>
-  <script src="main.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eventos</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>Gestión de Eventos</h1>
+  </header>
+  <main>
+    <section id="search-container">
+      <h2>Buscar Eventos</h2>
+      <input type="text" id="search-bar" placeholder="Buscar por nombre, fecha o lugar..." aria-label="Buscar eventos">
+    </section>
+
+    <section id="event-list-container">
+      <h2>Lista de Eventos</h2>
+      <ul id="event-list">
+      </ul>
+    </section>
+
+    <section id="event-details-container">
+      <h2>Detalles del Evento</h2>
+      <div id="event-details">
+        <p>Seleccione un evento para ver los detalles.</p>
+      </div>
+    </section>
+
+    <section id="event-registration-container">
+      <h2>Registro para el Evento</h2>
+      <form id="registration-form">
+        <label for="name">Nombre completo:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="event-id">Evento:</label>
+        <select id="event-id" name="event-id" required>
+          <option value="" disabled selected>Seleccione un evento</option>
+        </select>
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 - Gestión de Eventos Corp. Todos los derechos reservados.</p>
+  </footer>
+</body>
+<script src="main.js"></script>
+
 </html>
