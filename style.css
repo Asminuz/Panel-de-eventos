@@ -2,3 +2,138 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #4caf8e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+
+#search-container {
+  margin-bottom: 30px;
+}
+
+#search-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+#event-list-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#event-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#event-list li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#event-list li:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+
+#event-details-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#event-details {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+#event-registration-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#registration-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#registration-form input,
+#registration-form select {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#registration-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf8e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#registration-form button:hover {
+  background-color: #4caf8e;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+footer p {
+  font-size: 14px;
+}
