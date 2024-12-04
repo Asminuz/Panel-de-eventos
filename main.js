@@ -57,3 +57,5 @@ const showEventDetails = (event) => {
 };
 
 document.addEventListener('DOMContentLoaded', loadEvents);
+
+
