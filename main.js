@@ -43,8 +43,16 @@ const showEventDetails = (event) => {
     const detailsContainer = document.getElementById('event-details');
     detailsContainer.innerHTML = `
         <h3>${event.name}</h3>
-        <p><strong>Fecha y horas:</strong> ${event.date}</p>
+        <p><strong>Descripción:</strong> ${event.description}</p>
+        <p><strong>Fecha y horas:</strong> ${event.date} ${event.time}</p>
+        <p><strong>Precio:</strong> ${event.price} ${event.currency}</p>
         <p><strong>Lugar:</strong> ${event.location}</p>
+        <p><strong>Organizador:</strong> ${event.organizer}</p>
+        <br>
+        <p><strong>Contacto:</strong></p>
+        <strong>Teléfono:</strong> ${event.contact.phone}
+        <br>
+        <strong>Email:</strong> ${event.contact.email}
     `;
 };
 
