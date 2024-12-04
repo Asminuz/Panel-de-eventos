@@ -122,7 +122,8 @@ section {
 }
 
 #registration-form button:hover {
-  background-color: #4caf8e;
+  background-color: #2f6855;
+  transition: 0.3s;
 }
 
 
@@ -136,4 +137,18 @@ footer {
 
 footer p {
   font-size: 14px;
+}
+
+.details-btn{
+  border-radius: 1rem;
+  padding: 6px;
+  background-color: #4caf8e;
+  color: #ffffff;
+  border-style: none;
+}
+
+.details-btn:hover{
+  background-color: #2f6855;
+  transition: 0.4s;
+  cursor: pointer;
 }
