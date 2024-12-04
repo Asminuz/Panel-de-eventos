@@ -31,6 +31,8 @@ const loadEvents = () => {
                     const eventId = e.target.getAttribute('data-id');
                     const event = events.find(event => event.id == eventId);
                     showEventDetails(event);
+                    const seccionDestino = document.getElementById('event-details-container');
+                    seccionDestino.scrollIntoView({ behavior: 'smooth' });
                 });
             });
         })
@@ -41,7 +43,7 @@ const showEventDetails = (event) => {
     const detailsContainer = document.getElementById('event-details');
     detailsContainer.innerHTML = `
         <h3>${event.name}</h3>
-        <p><strong>Fecha:</strong> ${event.date}</p>
+        <p><strong>Fecha y horas:</strong> ${event.date}</p>
         <p><strong>Lugar:</strong> ${event.location}</p>
     `;
 };
